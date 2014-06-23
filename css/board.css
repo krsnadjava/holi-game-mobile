@@ -9,8 +9,8 @@ body
 }
 
 .content-container {
-	width: 960px;
-	height: 600px;
+	width: 920px;
+	height: 640px;
 	position: absolute;
 	vertical-align: middle;
 	margin: auto;
@@ -19,10 +19,10 @@ body
 	left : 0;
 	right: 0;
 	background: url('../images/bg.jpg') no-repeat; 
-  	-webkit-background-size: 960px 600px;
-  	-moz-background-size: 960px 600px;
-  	-o-background-size: 960px 600px;
-  	background-size: 960px 600px;
+  	-webkit-background-size: 920px 640px;
+  	-moz-background-size: 920px 640px;
+  	-o-background-size: 920px 640px;
+  	background-size: 920px 640px;
 }
 
 .hidden {
@@ -125,13 +125,13 @@ body
 .content
 {
 	margin : 0;
-	padding-top: 60px;
-	width : 462px;
+	padding-top: 85px;
+	width : 460px;
 }
 
 .content table
 {
-	height : 443px;
+	height : 444px;
 	width : 100%;
 	border-spacing : 0;
 }
@@ -850,7 +850,7 @@ form input[type=submit]:active, form input[type=reset]:active
 @media screen and (min-width: 961px) {
 	body {
     	width: 100%;
-    	max-width: 960px;
+    	max-width: 920px;
     	margin: 0 auto;
 	}
 }

@@ -1,0 +1,169 @@
+<DOCTYPE HTML>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/board.css" />
+		<!-- INCLUDE JQUERY -->
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/script.js"></script>
+		<!--<link href="font/" rel='stylesheet' />-->
+		<title>6 x 6 Board Game</title>
+	</head>
+	
+	<body>	
+		<!-- TEXT CHART -->
+		<div class="content-container">
+			<div class="winning">
+				<!-- TEXT SECTION -->
+				<p>
+					gratulation!
+				</p>
+				<p>
+					du hast die aufgabe gelöst.
+				</p>
+				<p>
+					ich möchte am gewinnspiel teilnehmen!
+				</p>
+				<p>
+					nicht alle pflichtfelder sind ausgefüllt. bitte überprüfe deine angaben.
+				</p>
+				
+				<!-- FORM SECTION -->
+				<form action="#">
+					<input type="text" name="name" placeholder="NAME">
+					<input type="text" name="email" placeholder="E-MAIL ADRESSE">	
+					<div class="squaredTwo">
+						<input type="checkbox" value="None" id="squaredTwo" name="check" />
+						<label for="squaredTwo">
+						</label>
+					</div>
+					<p>
+						Ja, ich akzeptiere die <u>Teilnahmebedingungen 
+						und Datenschutzerklärung</u>
+					</p>
+					<input type="submit" value="">
+					<input type="reset" value="">
+				</form>
+				
+				<!-- IMAGE SECTION -->
+				<img src="images/danke.png" class="danke hidden"/>
+				<img src="images/gewinne.png" class="gewinne"/>
+				<img src="images/schild.png" class="schild"/>
+			</div>
+			<div class="left-side">
+				<div id="btn-start">
+					<img src="images/start_box.png" alt="" onclick="restart()">
+					<img src="images/start_arrow.png" alt="" id="arrow-start">
+				</div>
+				<div class="spielanleitung">
+					<h2>Spielanleitung:</h2>
+					<p>	
+						Auf der Suche nach Julia musst du durch die Menschenmenge. Wie das geht?<br><br>
+						<ol>
+							<li>Klicke auf die Menschen und 
+								verbinde sie. Du startest oben 
+								links, Ziel ist unten rechts.</li>
+							<li>Deine verbleibenden Spielzüge 
+								stehen oben rechts.</li>
+							<li>Du musst an unseren yourfone 
+								Promotern vorbei. Du erkennst 
+								sie an den farbigen Shirts.</li>
+							<li>Hast du die Aufgabe gelöst und 
+								das Teilnahmeformular ausgefüllt, 
+								nimmst du an unserem tollen 
+								Gewinnspiel teil.</li>
+						</ol>
+					</p>
+				</div>
+			</div>
+			<div class="content">
+				<table id="gameBoard">
+					<tr class="hidden">
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>x</td>
+					</tr>
+					
+					<tr>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="hidden">1</td>
+					</tr>
+					
+					<tr>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="hidden">2</td>
+					</tr>
+					
+					<tr>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="hidden">3</td>
+					</tr>
+					
+					<tr>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="hidden">4</td>
+					</tr>
+					
+					<tr>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="hidden">5</td>
+					</tr>
+					
+					<tr>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="cell"></td>
+						<td class="hidden">6</td>
+					</tr>
+				</table>
+			</div>
+			<div class="right-side">
+				<div class="counter">
+					<h2 id="counter-desc">14x</h2>
+				</div>
+				<div id="btn-ziel">
+					<img src="images/ziel_arrow.png" alt="">
+					<img src="images/ziel_box.png" alt="">
+				</div>
+			</div>
+		</div>
+		<img src="images/text-chart-1.png" id="text-chart-1" />
+		<img src="images/text-chart-2.png" id="text-chart-2" />
+		<img src="images/text-chart-3a.png" id="text-chart-3a" />
+		<img src="images/text-chart-3b.png" id="text-chart-3b" />
+		<img src="images/text-chart-3c.png" id="text-chart-3c" />
+	</body>
+</html>

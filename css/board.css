@@ -1,0 +1,856 @@
+body
+{
+	height :100%;
+	width : 100%;
+	margin-left: 0px;
+	margin-top: auto;
+	overflow:auto;
+	vertical-align: middle;
+}
+
+.content-container {
+	width: 960px;
+	height: 600px;
+	position: absolute;
+	vertical-align: middle;
+	margin: auto;
+	top : 0;
+	bottom: 0;
+	left : 0;
+	right: 0;
+	background: url('../images/bg.jpg') no-repeat; 
+  	-webkit-background-size: 960px 600px;
+  	-moz-background-size: 960px 600px;
+  	-o-background-size: 960px 600px;
+  	background-size: 960px 600px;
+}
+
+.hidden {
+	display: none;
+}
+
+.left-side, .content, .right-side {
+	float: left;
+}
+
+.left-side {
+	margin-left: 15px;
+	margin-right: 22px;
+	width: 238px;
+}
+
+/* BUTTON START */
+#btn-start
+{
+	margin-top : 58px;
+	margin-bottom : 46px;
+	margin-left : 65px;
+}
+
+#btn-start img:first-child {
+	cursor: pointer;
+}
+
+#arrow-start
+{
+	padding-left: 20px;
+	padding-bottom: 15px;
+}
+
+/* SPIELANLEITUNG */
+@font-face 
+{
+    font-family: Quantico-Regular;
+    src: url('../fonts/Quantico-Regular.otf');
+}
+
+@font-face 
+{
+    font-family: Quantico-Bold;
+    src: url('../fonts/Quantico-Bold.otf');
+}
+
+@font-face 
+{
+    font-family: KillerElephant;
+    src: url('../fonts/killerelephant.ttf');
+}
+
+.spielanleitung {
+	width: 234px;
+	height : 387px;
+	background: url('../images/spielanleitungBG.png') no-repeat;
+}
+
+.spielanleitung  h2
+{
+	padding-top : 17px;
+	padding-left : 16px;
+	margin-bottom : 0px;
+	font-family : KillerElephant;
+	color : #AC678C;
+	font-size : 12.61pt;
+}
+
+.spielanleitung p
+{
+	padding-left : 16px;
+	padding-top : 18px;
+	margin-top : 0px;
+	margin-bottom : 0px;
+	font-family : Quantico-Regular;
+	font-size : 10pt;
+	color : #2C3D49;
+}
+
+.spielanleitung ol
+{
+	margin-top : 0px;
+	margin-bottom : 0px;
+	padding-left : 35px;
+	padding-right : 9px;
+}
+
+.spielanleitung li
+{
+	font-family : Quantico-Regular;
+	font-size : 10pt;
+	margin-top : 0px;
+	margin-bottom : 0px;
+	color : #2C3D49;
+}
+
+
+/*END OF SPIELANLEITUNG */
+.content
+{
+	margin : 0;
+	padding-top: 60px;
+	width : 462px;
+}
+
+.content table
+{
+	height : 443px;
+	width : 100%;
+	border-spacing : 0;
+}
+
+.content table tr td
+{
+	border : none;
+	text-align : center;
+	height : 16%; 
+	width : 16%;
+	border-spacing : 0;
+}
+
+td img
+{
+	display: block;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man
+{ 
+	background: url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.dotted
+{ 
+	background: url('../images/dot.png') no-repeat, url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.left
+{ 
+	background: url('../images/left.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.right
+{ 
+	background: url('../images/right.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.left.right
+{ 
+	background: url('../images/hor.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.left.up
+{ 
+	background: url('../images/left-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.left.down
+{ 
+	background: url('../images/left-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.right.up
+{ 
+	background: url('../images/right-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.right.down
+{ 
+	background: url('../images/right-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.up
+{ 
+	background: url('../images/up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.down
+{ 
+	background: url('../images/down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.up.down
+{ 
+	background: url('../images/ver.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1
+{ 
+	background: url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.dotted
+{ 
+	background: url('../images/dot.png') no-repeat, url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.left
+{ 
+	background: url('../images/left.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.right
+{ 
+	background: url('../images/right.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.left.right
+{ 
+	background: url('../images/hor.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.left.up
+{ 
+	background: url('../images/left-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.left.down
+{ 
+	background: url('../images/left-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.right.up
+{ 
+	background: url('../images/right-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.right.down
+{ 
+	background: url('../images/right-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.up
+{ 
+	background: url('../images/up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.down
+{ 
+	background: url('../images/down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.up.down
+{ 
+	background: url('../images/ver.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2
+{ 
+	background: url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.dotted
+{ 
+	background: url('../images/dot.png') 2 0 no-repeat, url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.left
+{ 
+	background: url('../images/left.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.right
+{ 
+	background: url('../images/right.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.left.right
+{ 
+	background: url('../images/hor.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.left.up
+{ 
+	background: url('../images/left-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.left.down
+{ 
+	background: url('../images/left-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.right.up
+{ 
+	background: url('../images/right-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.right.down
+{ 
+	background: url('../images/right-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.up
+{ 
+	background: url('../images/up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.down
+{ 
+	background: url('../images/down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.up.down
+{ 
+	background: url('../images/ver.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple
+{ 
+	background: url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple.dotted
+{ 
+	background: url('../images/dot.png') no-repeat, url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple.left
+{ 
+	background: url('../images/left.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple.right
+{ 
+	background: url('../images/right.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple.left.right
+{ 
+	background: url('../images/hor.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple.left.up
+{ 
+	background: url('../images/left-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple.left.down
+{ 
+	background: url('../images/left-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple.right.up
+{ 
+	background: url('../images/right-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple.right.down
+{ 
+	background: url('../images/right-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple.up
+{ 
+	background: url('../images/up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple.down
+{ 
+	background: url('../images/down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).man.purple.up.down
+{ 
+	background: url('../images/ver.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/man-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple
+{ 
+	background: url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple.dotted
+{ 
+	background: url('../images/dot.png') no-repeat, url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple.left
+{ 
+	background: url('../images/left.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple.right
+{ 
+	background: url('../images/right.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple.left.right
+{ 
+	background: url('../images/hor.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple.left.up
+{ 
+	background: url('../images/left-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple.left.down
+{ 
+	background: url('../images/left-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple.right.up
+{ 
+	background: url('../images/right-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple.right.down
+{ 
+	background: url('../images/right-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple.up
+{ 
+	background: url('../images/up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple.down
+{ 
+	background: url('../images/down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman1.purple.up.down
+{ 
+	background: url('../images/ver.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman1-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple
+{ 
+	background: url('../images/woman2-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple.dotted
+{ 
+	background: url('../images/dot.png') no-repeat, url('../images/woman2-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple.left
+{ 
+	background: url('../images/left.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple.right
+{ 
+	background: url('../images/right.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple.left.right
+{ 
+	background: url('../images/hor.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple.left.up
+{ 
+	background: url('../images/left-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple.left.down
+{ 
+	background: url('../images/left-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple.right.up
+{ 
+	background: url('../images/right-up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple.right.down
+{ 
+	background: url('../images/right-down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple.up
+{ 
+	background: url('../images/up.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple.down
+{ 
+	background: url('../images/down.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2-purple.png') center no-repeat;
+}
+
+.content table tr:not(:first-child) td:not(:last-child).woman2.purple.up.down
+{ 
+	background: url('../images/ver.png') no-repeat, url('../images/dot.png') no-repeat, url('../images/woman2-purple.png') center no-repeat;
+}
+
+/* RIGHT SIDE */
+.right-side{
+	margin-left:3px;
+	margin-right:0px;
+	height:600px;
+	width:219px;
+	background:url('../images/connector-splat.png');
+	background-repeat:no-repeat;
+	background-size : 219px 248px;
+}
+
+.counter{
+	margin-top:70px;
+	margin-left:50px;
+	
+	font-size:24px;
+	font-family : KillerElephant;
+	text-align:center;
+	
+	color : white;
+}
+
+
+.counter.blinking{
+	-webkit-animation: blinkingText 0.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-timing-function:linear;
+	animation: blinkingText 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction:alternate;
+	animation-timing-function:linear;
+}
+
+
+/* ANIMATION */
+@-webkit-keyframes blinkingText{
+   0% {color:white;}
+   100% {color:red;}
+}
+
+@keyframes blinkingText{
+   from{color:white;}
+   to {color:red;}
+}
+
+#btn-ziel{
+	margin-top:325px;
+}
+
+#btn-ziel img
+{
+	margin-left: 9px;
+}
+
+#btn-ziel img:nth-child(1)
+{
+	padding-bottom: 15px;
+}
+
+/*	TEXT-CHART-1	*/
+#text-chart-1
+{
+	position : absolute;
+	visibility : visible;
+	margin: auto;
+	top : 0;
+	bottom: 0;
+	left : 0;
+	right: 0;
+	padding-bottom: 250px;
+	padding-left: 50px;
+}
+
+#text-chart-2
+{
+	position : absolute;
+	visibility : visible;
+	margin: auto;
+	top : 0;
+	bottom: 0;
+	left : 0;
+	right: 0;
+	padding-bottom: 250px;
+	padding-left: 50px;
+}
+
+#text-chart-3a
+{
+	position : absolute;
+	visibility : visible;
+	margin: auto;
+	top : 0;
+	bottom: 0;
+	left : 0;
+	right: 0;
+	padding-bottom: 250px;
+	padding-left: 130px;
+}
+
+#text-chart-3b
+{
+	position : absolute;
+	visibility : visible;
+	margin: auto;
+	top : 0;
+	bottom: 0;
+	left : 0;
+	right: 0;
+	padding-top: 30px;
+	padding-left: 420px;
+}
+
+#text-chart-3c
+{
+	position : absolute;
+	visibility : visible;
+	margin: auto;
+	top : 0;
+	bottom: 0;
+	left : 0;
+	right: 0;
+	padding-top: 200px;
+	padding-left: 450px;
+}
+
+.winning
+{
+	margin-left : 67px;
+	margin-top: 0px;
+	height : 471px;
+}
+
+.winning  > p:first-child
+{
+	margin-top : 130px;
+	margin-bottom : 0px;
+	font-family : KillerElephant;
+	font-size : 41pt;
+	color : #2C3D49;
+}
+
+.winning > p:nth-child(2)
+{
+	margin: 0px;
+	font-family : Quantico-Bold;
+	font-size : 32pt;
+	color : #9B336F;
+	text-transform:uppercase;
+	width : 388px;
+	line-height : 100%;
+}
+
+.winning > p:nth-child(3)
+{
+	margin-top : 52px;
+	margin-bottom : 0px;
+	font-family : Quantico-Bold;
+	font-size : 18pt;
+	color : #FFFFFF;
+	text-transform:uppercase;
+}
+
+.winning > p:nth-child(4)
+{
+	margin-top : -5px;
+	margin-bottom : 12px;
+	font-family : Quantico-Bold;
+	font-size : 10pt;
+	color : #FFFFFF;
+	text-transform:uppercase;
+}
+
+/* FORM SECTION */
+input[type="text"] 
+{
+    width: 505px;
+	height : 49px;
+    display: block;
+    margin-bottom: 12px;
+    background-color: transparent;
+	border-radius : 2px;
+	border : 2px solid white;
+	font-family : Quantico-Bold;
+	font-size : 14pt;
+	color : #FFFFFF;
+	padding-left: 18px;
+	outline : none;
+}
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	color : #FFFFFF;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color : #FFFFFF;
+    opacity:  1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color : #FFFFFF;
+    opacity:  1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color : #FFFFFF;
+}
+
+input[type=checkbox]
+{
+	display : none;
+}
+
+/* SQUARED TWO -- FOR CHECKBOX */
+.squaredTwo {
+	width: 14px;
+	height: 14px;
+	background: transparent;
+	margin-top : 8px;
+	margin-left : 0px;
+	border : 2px solid white;
+	border-radius : 2px;
+	position: relative;
+	float : left;
+}
+
+.squaredTwo label {
+	cursor: pointer;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	margin : 0px auto;
+	background:transparent;
+}
+
+.squaredTwo label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 7px;
+	height: 3px;
+	background: transparent;
+	top: 3px;
+	left: 3px;
+	border: 2px solid #FFFFFF;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.squaredTwo label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
+.squaredTwo input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+form > p
+{
+	width : 230px;
+	margin-top : 10px;
+	margin-left : 8px;
+	font-family : Arial;
+	font-size : 11px;
+	color : #FFFFFF;
+	float : left;
+}
+
+form input[type=submit], form input[type=reset]
+{
+	background-image : url(../images/gewinnspiel-teilnehmen.png);
+	background-color : transparent;
+	border-color : transparent;
+	border : none;
+	outline : none;
+	width : 274px;
+	height : 49px;
+	margin-left : 15px;
+	cursor : pointer;
+}
+
+form input[type=submit]
+{
+	background-image : url(../images/gewinnspiel-teilnehmen.png);
+}
+
+form input[type=reset]
+{
+	background-image : url(../images/ohne-gewinnspiel.png);
+}
+
+form input[type=submit]:active, form input[type=reset]:active
+{
+    background-color:transparent;
+	border-color : transparent;
+	border : none;
+}
+
+/* IMAGE SECTION */
+.danke
+{
+	position : relative;
+	z-index : 2;
+	margin-top : -182px;
+	margin-left : -15px;
+	
+}
+
+.gewinne
+{
+	position : relative;
+	z-index : 2;
+	margin-top : -460px;
+	margin-left : 520px;
+}
+
+.schild
+{
+	position : relative;
+	z-index : 1;
+	margin-top : -578px;
+	margin-left : 385px;
+}
+
+@media screen and (min-width: 961px) {
+	body {
+    	width: 100%;
+    	max-width: 960px;
+    	margin: 0 auto;
+	}
+}

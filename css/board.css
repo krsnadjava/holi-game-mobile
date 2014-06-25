@@ -514,16 +514,17 @@ td img
 .right-side{
 	margin-left:3px;
 	margin-right:0px;
-	height:600px;
-	width:219px;
+	height:640px;
+	width:182px;
 	background:url('../images/connector-splat.png');
 	background-repeat:no-repeat;
 	background-size : 219px 248px;
+	background-position: -37px 0;
 }
 
 .counter{
-	margin-top:70px;
-	margin-left:50px;
+	margin-top:80px;
+	margin-left:43px;
 	
 	font-size:24px;
 	font-family : KillerElephant;
@@ -557,7 +558,7 @@ td img
 }
 
 #btn-ziel{
-	margin-top:325px;
+	margin-top:335px;
 }
 
 #btn-ziel img

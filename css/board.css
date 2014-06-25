@@ -639,14 +639,15 @@ td img
 
 .winning
 {
-	margin-left : 67px;
+	margin-left : 47px;
 	margin-top: 0px;
-	height : 471px;
+	height : 640px;
+	overflow : hidden;
 }
 
 .winning  > p:first-child
 {
-	margin-top : 130px;
+	margin-top : 170px;
 	margin-bottom : 0px;
 	font-family : KillerElephant;
 	font-size : 41pt;
